@@ -14,7 +14,6 @@ function firstClassTicket (button){
     Subtotal();
 };
 
-
 function economyTicket(button){
     const ticketInput = document.getElementById('economy-ticket-count');
     const ticketCount = parseInt(ticketInput.value);
@@ -48,23 +47,14 @@ function Subtotal(){
     document.getElementById("grand-total").innerText = grandTotal;
 }
 
-
-
-
-
-
-
-
-
-
-    const bookingBtn = document.getElementById("book-btn");
-        bookingBtn.addEventListener("click", function(){
-        const body = document.getElementById("body");
-        body.style.display = "none";
-        const displayBack = document.getElementById("display");
-            displayBack.style.display = "block";
+const bookingBtn = document.getElementById("book-btn");
+    bookingBtn.addEventListener("click", function(){
+    const body = document.getElementById("body");
+    body.style.display = "none";
+    const displayBack = document.getElementById("display");
+        displayBack.style.display = "block";
         
-    })
+})
 
 
 
